@@ -98,18 +98,70 @@ textarea {
 html {
 	background-color: #222;
 	height: 100%;
+	width: 100%;
 }
 
 body {
 	font-family: "Source Sans Pro", sans-serif;
-	padding: 2em;
+	padding: 0em 2em;
 	font-size: 1.25em;
-	height: 100%;
+	background-color: #222;
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+}
+
+header,
+footer,
+main {
+	color: #d3d3d3;
+}
+
+header,
+footer {
+	background-color: #d3d3;
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+}
+
+header h1 {
+	font-family: "Lora", sans-serif;
+	font-size: 3em;
+}
+
+main {
+	width: 100%;
+	font-size: 1.35em;
+	border-bottom: 1px solid #d3d3d3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+p span {
+	font-family: "Lora", sans-serif;
+}
+
+footer {
+	border-top: 1px solid #d3d3d3;
+}
+
+footer img {
+	width: 25px;
+	padding: 20px 10px;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	max-width: 1200px;
 }
 
 .wrapper {
 	/*add display:flex and set justify-content to space-between*/
-	font-weight: 700;
+	font-weight: 400;
 	display: flex;
 	justify-content: space-between;
 }
@@ -120,9 +172,9 @@ body {
 	/*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
 	color: #d3d3d3;
 	line-height: 1.5em;
-	font-size: 1.25em;
-	padding: 2%;
-	height: 300px;
+	font-size: 1em;
+	padding: 1.5%;
+	margin: 1%;
 	width: 30%;
 	display: flex;
 	justify-content: center;
